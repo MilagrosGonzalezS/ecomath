@@ -1,0 +1,181 @@
+.banner {
+  background-color: var(--clr-lightgreen);
+  min-height: 475px;
+  font-family: var(--ff-primary);
+  color: var(--clr-darkgreen);
+  border-bottom-left-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  box-shadow: var(--bs2);
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#nav {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+nav img {
+  height: 2.3rem;
+  margin-top: 1rem;
+}
+
+.hamburger div {
+  width: 20px;
+  height: 3px;
+  background-color: var(--clr-darkgreen);
+  margin: 3px;
+  border-radius: 0.5rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  opacity: 0;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.nav-list li {
+  list-style-type: none;
+  width: 100%;
+  border: 1px solid var(--clr-darkgreen);
+  border-radius: 0.3rem;
+  padding: 0.3rem 0;
+  margin: 0.03rem 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--clr-darkgreen);
+}
+
+.nav-list li:hover {
+  border: 2px solid var(--clr-darkgreen);
+  font-weight: 900;
+}
+
+#nav:checked ~ .nav-list {
+  max-height: 3000px;
+  opacity: 1;
+  transition: opacity 1s ease-in-out, max-height 1.3s ease-in-out;
+}
+
+.banner-desktop img {
+  width: 230px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+
+.banner p {
+  font-family: var(--ff-secondary);
+  margin-bottom: 1rem;
+}
+
+.banner button {
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  background-color: var(--clr-violet);
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--clr-fonts-light);
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.banner a {
+  text-decoration: none;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .banner button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 769px) {
+  .banner {
+    padding-bottom: 5rem;
+  }
+  .banner-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .banner-desktop div h1 {
+    font-size: 3rem;
+  }
+
+  .banner-desktop div p {
+    font-size: 1.3rem;
+  }
+
+  .banner-desktop div {
+    text-align: left;
+    margin-left: 6rem;
+  }
+
+  .banner-desktop img {
+    width: 500px;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .banner button {
+    font-size: 1.8rem;
+    width: 12rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+
+  nav img {
+    height: 2.9rem;
+    margin-top: 2.5rem;
+  }
+
+  .hamburger div {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 45rem;
+    margin-bottom: 2rem;
+    opacity: revert;
+    max-height: revert;
+    justify-content: space-evenly;
+    position: relative;
+    top: -35px;
+  }
+
+  .nav-list li {
+    border: none;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+  }
+}

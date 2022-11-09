@@ -1,0 +1,49 @@
+.tips {
+  font-family: var(--ff-primary);
+}
+
+.tip {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 2rem auto 4rem auto;
+  text-align: center;
+}
+
+.tip img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.tip p {
+  margin-top: 1.5rem;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .tip {
+    flex-direction: row;
+  }
+
+  .tip p {
+    margin-left: 2rem;
+  }
+
+  .tip img {
+    max-height: 110px;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 769px) {
+  .tip-desktop {
+    display: flex;
+    margin: 0 10rem;
+  }
+
+  .tip {
+    width: 30%;
+  }
+}

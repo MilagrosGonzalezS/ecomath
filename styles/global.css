@@ -1,0 +1,79 @@
+:root {
+  --ff-primary: "Exo", sans-serif;
+  --ff-secondary: "MuseoModerno";
+
+  --clr-lightgreen: #51e4ac;
+  --clr-green: #69d953;
+  --clr-darkgreen: #006837;
+  --clr-violet: #93278f;
+  --clr-dark: #303030;
+  --clr-fonts-light: #f1f1f1;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.1);
+
+  --bs2: 0.3em 0.3em 0.5em rgba(0, 0, 0, 0.16);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  min-height: 9rem;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.subtitle h2 {
+  font-size: 1.2rem;
+}
+
+.subtitle img {
+  width: 100px;
+}
+
+.regreso {
+  width: 50px;
+  height: 50px;
+  background-color: #e6e6e6;
+  position: fixed;
+  z-index: 50;
+  right: 2vh;
+  bottom: 2vh;
+  border: none;
+  border-radius: 5rem;
+}
+
+.regreso img {
+  height: 20px;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 769px) {
+  .subtitle {
+    justify-content: space-around;
+    padding: 1rem 0;
+    width: 75%;
+    margin: 1rem auto;
+  }
+
+  .subtitle h2 {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+
+  .subtitle img {
+    width: 160px;
+  }
+}

@@ -1,0 +1,50 @@
+.resultado {
+  font-family: var(--ff-primary);
+  background-color: var(--clr-lightgreen);
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.resultado h1 {
+  color: var(--clr-darkgreen);
+  margin: 0 1rem 3rem 1rem;
+}
+
+.resultado img {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.resultado button {
+  width: 9rem;
+  height: 2.3rem;
+  border: none;
+  background-color: var(--clr-violet);
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--clr-fonts-light);
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.resultado a {
+  text-decoration: none;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .resultado img {
+    width: 60%;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 769px) {
+  .resultado img {
+    width: 50%;
+  }
+}
